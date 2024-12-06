@@ -25,7 +25,7 @@ const wavesurfer = WaveSurfer.create({
   waveColor: gradient,
   progressColor: progressGradient,
   barWidth: 2,
-  url: 'tracks/bongos.mp3',
+  url: 'tracks/160.wav',
 })
 
 // Play/pause on click
@@ -54,3 +54,37 @@ wavesurfer.on('interaction', () => {
   wavesurfer.on('decode', (duration) => (durationEl.textContent = formatTime(duration)))
   wavesurfer.on('timeupdate', (currentTime) => (timeEl.textContent = formatTime(currentTime)))
 }
+
+const setlist = [
+  { artist: "14", track: "Funky Pills", time: "00:00:00" },
+  { artist: "Ramu", track: "Name One", time: "00:02:07" },
+  { artist: "14", track: "Funky Pills", time: "00:03:15" },
+  { artist: "Shadow Child", track: "P&O", time: "00:05:06" },
+  { artist: "Ramu", track: "Name One", time: "00:05:57" },
+  { artist: "Shadow Child", track: "P&O", time: "00:07:37" },
+  { artist: "Willis Anne", track: "Direct Effect", time: "00:07:49" },
+  { artist: "Shadow Child", track: "P&O", time: "00:08:01" },
+  { artist: "Motorist", track: "Drip", time: "00:11:02" },
+  { artist: "Willis Anne", track: "Direct Effect", time: "00:11:46" },
+  { artist: "Tim Reaper & Dwarde", track: "Couch Surfing w/ DJ Sofa)", time: "00:16:15" },
+  { artist: "Extra Spicy", track: "nickname - Simon Said", time: "00:19:17" },
+  { artist: "Bakey", track: "Poison Dart", time: "00:23:04" },
+  { artist: "Brieuc", track: "Soirée au Chantier [COMICSANS4]", time: "00:25:52" },
+  { artist: "Soul Mass Transit System", track: "Stand By Me", time: "00:29:40" },
+  { artist: "Alex Reece", track: "Chill Pill [2015 Re-Master]", time: "00:32:33" },
+  { artist: "LUZ1E", track: "Early Reflections", time: "00:36:41" },
+  { artist: "Alex Reece", track: "Chill Pill [2015 Re-Master]", time: "00:37:15" },
+  { artist: "Duskope", track: "Give It To Me", time: "00:39:55" },
+  { artist: "Motorist", track: "Blast Route", time: "00:43:01" },
+  { artist: "Duskope", track: "Give It To Me", time: "00:43:36" },
+  { artist: "Janeret", track: "Andromeda", time: "00:46:12" },
+  { artist: "Motorist", track: "Blast Route", time: "00:47:06" },
+  { artist: "LUZ1E", track: "Hyperfunk (Deep 8reak Cut)", time: "00:51:12" },
+  { artist: "Ghettopír", track: "Way Back Home", time: "00:54:42" },
+  { artist: "LUZ1E", track: "Hyperfunk (Deep 8reak Cut)", time: "00:55:09" },
+  { artist: "Rick Wade", track: "Quantum Jit", time: "00:57:09" },
+  { artist: "Aphex Twin", track: "Polynomial-C", time: "01:00:49" },
+  { artist: "LUZ1E", track: "Ridin", time: "01:04:28" },
+  { artist: "Baltra", track: "Battery Boys (Baltra Instrumental Remix)", time: "01:07:44" },
+  { artist: "Choopsie", track: "Away", time: "01:12:15" }
+];
